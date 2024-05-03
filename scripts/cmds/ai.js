@@ -28,7 +28,7 @@ module.exports = {
       }
       const prompt = event.body.substring(prefix.length).trim();
    if (!prompt) {
-        await message.reply("📝 𝗪𝗮𝗹𝗸𝗲𝗿𝗚𝗣𝗧\n━━━━━━━━━━━━━━\n:\n\nHello! How can I assist you today.");
+        await message.reply("📝 𝗪𝗮𝗹𝗸𝗲𝗿𝗚𝗣𝗧\n━━━━━━━━━━━━━━\n:\n\nHello! How can I assist you today. ⚪");
         return;
       }
 
@@ -37,7 +37,7 @@ module.exports = {
       const answer = response.data.answer;
 
  
-    await message.reply(`📝 𝗪𝗮𝗹𝗸𝗲𝗿𝗚𝗣𝗧:\n━━━━━━━━━━━━━━\n\n${answer}\n━━━━━━━━━━━━━━\n`);
+    await message.reply(`📝 𝗪𝗮𝗹𝗸𝗲𝗿𝗚𝗣𝗧:\n━━━━━━━━━━━━━━\n\n${answer}\n━━━━━━━━━━━━━━\n🟢 𝘔𝘦𝘵𝘰𝘶𝘴𝘩𝘦𝘭𝘢 𝘸𝘢𝘭𝘬𝘦𝘳 ⚪`);
 
     } catch (error) {
       console.error("Error:", error.message);
