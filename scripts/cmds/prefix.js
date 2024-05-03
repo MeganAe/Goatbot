@@ -99,8 +99,8 @@ module.exports = {
 	  const data = await usersData.get(event.senderID);
     const name = data.name;
 	  const xyrene = {
-	    body: `🈷️${name}🈷️` + getLang("myPrefix", global.GoatBot.config.prefix, utils.getPrefix(event.threadID)),
-	    attachment: await global.utils.getStreamFromURL("https://i.postimg.cc/sX1pGjkp/received-382980121010375.jpg")
+	    body: ` 🍪${name}🍪` + getLang("myPrefix", global.GoatBot.config.prefix, utils.getPrefix(event.threadID)),
+	    attachment: await global.utils.getStreamFromURL("")
 				};
 		if (event.body && event.body.toLowerCase() === "prefix")
 			return () => {
